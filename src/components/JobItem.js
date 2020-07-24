@@ -11,6 +11,14 @@ const JobItemContainer = styled.div`
   border-radius: 5px;
   border-left: 7px solid ${colors.primary};
   box-shadow: 0px 9px 12px -2px hsla(180, 29%, 50%, 0.3);
+
+  img {
+    width: 50px; 
+    position: absolute;
+    top: -23px;
+    left: 15px;
+
+  }
 `;
 
 const JobItem = ({ job }) => {
