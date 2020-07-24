@@ -4,4 +4,5 @@ export default {
   filterTablets: 'hsl(180, 31%, 95%)',
   darkCyan: 'hsl(180, 8%, 52%)',
   darkerCyan: 'hsl(180, 14%, 20%)',
+  text: '#ffffff',
 }

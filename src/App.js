@@ -22,7 +22,6 @@ function App() {
 
       <Main>
         <JobList jobs={jobs} />
-      </Main>
       <Footer>
         Challenge by{" "}
         <a
@@ -34,6 +33,7 @@ function App() {
         </a>
         Coded by <a href="https://github.com/abulnes16">@abulnes16.</a>
       </Footer>
+      </Main>
     </div>
   );
 }
