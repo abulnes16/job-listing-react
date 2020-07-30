@@ -77,6 +77,11 @@ const JobItemContainer = styled.div`
         h5 {
          font-size: 13px;
         }
+
+        h3 {
+          font-size:1.1em;
+        }
+
       }
 
       &__requirements {
