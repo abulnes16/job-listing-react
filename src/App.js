@@ -23,15 +23,15 @@ function App() {
       <Main>
         <JobList jobs={jobs} />
       <Footer>
-        Challenge by{" "}
+        Challenge by &nbsp;
         <a
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Frontend Mentor.
+            Frontend Mentor.
         </a>
-        Coded by <a href="https://github.com/abulnes16">@abulnes16.</a>
+        Coded by &nbsp;  <a href="https://github.com/abulnes16">@abulnes16.</a>
       </Footer>
       </Main>
     </div>

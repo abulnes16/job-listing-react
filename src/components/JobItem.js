@@ -1,5 +1,5 @@
 import React from "react";
-import colors from '../constants/colors';
+import colors from "../constants/colors";
 //Styled components
 import Badge from "./styled/Badge";
 import Button from "./styled/Button";
@@ -11,20 +11,24 @@ import BadgeList from "./BadgeList";
 const JobItem = ({ job }) => {
   return (
     <JobItemContainer>
-      <img src={job.logo} alt="Job logo" />
-      <div className="job-item__title">
-        <h5>{job.company}</h5>
-        {job.new ? <Badge background={colors.primary}>New!</Badge> : null}
-        {job.featured ? <Badge background={colors.darkerCyan}>Featured</Badge> : null}
-      </div>
       <div className="job-item__data">
-        <h3>{job.position}</h3>
-        <div>
-          <span>{job.postedAt}</span>
-          <span>&bull;</span>
-          <span>{job.contract}</span>
-          <span>&bull;</span>
-          <span> {job.location}</span>
+        <img src={job.logo} alt="Job logo" />
+        <div className="job-item__description">
+          <div className="job-item__title">
+            <h5>{job.company}</h5>
+            {job.new ? <Badge background={colors.primary}>New!</Badge> : null}
+            {job.featured ? (
+              <Badge background={colors.darkerCyan}>Featured</Badge>
+            ) : null}
+          </div>
+          <h3>{job.position}</h3>
+          <div>
+            <span>{job.postedAt}</span>
+            <span>&bull;</span>
+            <span>{job.contract}</span>
+            <span>&bull;</span>
+            <span> {job.location}</span>
+          </div>
         </div>
       </div>
       <div className="job-item__requirements">

@@ -6,7 +6,13 @@ const Header = styled.header`
   height: 150px;
   background-image: url('./images/bg-header-mobile.svg');
   background-size: cover;
-  background-color: ${colors.primary}
+  background-color: ${colors.primary};
+
+  @media screen and (min-width: 1024px){
+    height: 50px;
+    background-image: url('./images/bg-header-desktop.svg');
+  }
+  
 `
 
 export default Header;

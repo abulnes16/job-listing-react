@@ -1,8 +1,7 @@
-import styled from 'styled-components';
-import colors from '../../constants/colors'
+import styled from "styled-components";
+import colors from "../../constants/colors";
 
 const Footer = styled.footer`
-  
   width: 100%;
   padding: 15px 0;
   background-color: ${colors.primary};
@@ -18,6 +17,15 @@ const Footer = styled.footer`
     text-decoration: none;
   }
 
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+
+    a {
+      margin-right: 10px;
+    }
+  }
 `;
 
 export default Footer;

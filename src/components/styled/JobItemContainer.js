@@ -31,7 +31,7 @@ const JobItemContainer = styled.div`
       }
     }
 
-    &__data {
+    &__description {
       h3 {
         margin: 5px 0 10px;
         color: ${colors.darkerCyan};
@@ -49,8 +49,6 @@ const JobItemContainer = styled.div`
           margin-right: 5px;
         }
       }
-
-      
     }
 
     &__requirements {
@@ -58,6 +56,33 @@ const JobItemContainer = styled.div`
       flex-wrap: wrap;
       border-top: 1px solid ${colors.darkCyan};
       padding-top: 5px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    .job-item {
+      &__data {
+        display: flex;
+        align-items: center;
+        img {
+          position: initial;
+          width: 80px;
+          height: 80px;
+          margin-right: 25px;
+        }
+
+        h5 {
+         font-size: 13px;
+        }
+      }
+
+      &__requirements {
+        border-top: none;
+        align-items: center;
+      }
     }
   }
 `;
