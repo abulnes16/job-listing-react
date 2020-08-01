@@ -5,12 +5,12 @@ import PropTypes from 'prop-types';
 import JobItem from './JobItem'
 
 
-const JobList = ({jobs}) => {
+const JobList = ({jobs, addFilter}) => {
   return (
     <section className="job-list">
       {
         jobs.map((job)=>(
-          <JobItem key={job.id} job={job}/>
+          <JobItem key={job.id} job={job} addFilter={addFilter}/>
         ))
       }
     </section>

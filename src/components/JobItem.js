@@ -8,7 +8,7 @@ import JobItemContainer from "./styled/JobItemContainer";
 //Components
 import BadgeList from "./BadgeList";
 
-const JobItem = ({ job }) => {
+const JobItem = ({ job, addFilter }) => {
   return (
     <JobItemContainer>
       <div className="job-item__data">
@@ -32,10 +32,20 @@ const JobItem = ({ job }) => {
         </div>
       </div>
       <div className="job-item__requirements">
-        <Button>{job.role}</Button>
-        <Button>{job.level}</Button>
-        {job.languages.length !== 0 ? <BadgeList data={job.languages} /> : null}
-        {job.tools.length !== 0 ? <BadgeList data={job.tools} /> : null}
+        <Button onClick={() => addFilter(job.role, "role")}>{job.role}</Button>
+        <Button onClick={() => addFilter(job.level, "level")}>
+          {job.level}
+        </Button>
+        {job.languages.length !== 0 ? (
+          <BadgeList
+            data={job.languages}
+            info="languages"
+            addFilter={addFilter}
+          />
+        ) : null}
+        {job.tools.length !== 0 ? (
+          <BadgeList data={job.tools} info="tools" addFilter={addFilter} />
+        ) : null}
       </div>
     </JobItemContainer>
   );
