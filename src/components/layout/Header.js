@@ -9,7 +9,6 @@ const Header = styled.header`
   background-color: ${colors.primary};
 
   @media screen and (min-width: 1024px){
-    height: 50px;
     background-image: url('./images/bg-header-desktop.svg');
   }
   

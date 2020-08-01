@@ -9,3 +9,28 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
+.relative {
+  position: relative;
+}
+
+.card__filters {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card__button-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.card__button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: hsla(180, 14%, 20%, 0.6);
+  font-weight: bold;
+  font-size: 1em;
+}
