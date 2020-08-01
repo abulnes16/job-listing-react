@@ -37,7 +37,6 @@ function App() {
           return job;
         }
       });
-
     }
     setJobs(filterData);
   }, [filters]);
@@ -52,7 +51,11 @@ function App() {
     if (type === "role" || type === "level") {
       filterValue = value;
     } else {
-      filterValue = [...filters[type], value];
+      
+      filterValue = [...filters[type]];
+      if (!filterValue.includes(value)) {
+        filterValue.push(value);
+      }
     }
     setFilters({
       ...filters,
