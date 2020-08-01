@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Button from './styled/Button';
+import FilterButton from './styled/FilterButton';
 
 const Card = styled.div`
   width: 75%;
@@ -28,9 +28,9 @@ const FilterCard = () => {
   return (
     <Card>
       <div className="card__filters">
-        <Button>Frontend</Button>
-        <Button>CSS</Button>
-        <Button>Javascript</Button>
+        <FilterButton>Frontend</FilterButton>
+        <FilterButton>CSS</FilterButton>
+        <FilterButton>Javascript</FilterButton>
       </div>
       <div className="card__button-container">
         <button className="card__button">Clear</button>

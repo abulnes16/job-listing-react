@@ -34,3 +34,23 @@
   font-weight: bold;
   font-size: 1em;
 }
+
+.card__button:hover {
+  text-decoration: underline;
+  color: hsl(180, 29%, 50%);
+  cursor: pointer;
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.filter-button .filter-button__text {
+  margin: 0;
+}
+.filter-button .filter-button__text:hover {
+  background-color: hsl(180, 52%, 96%);
+  color: hsl(180, 29%, 50%);
+}
