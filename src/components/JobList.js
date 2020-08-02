@@ -1,24 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 //Components
 import JobItem from './JobItem'
 
 
-const JobList = ({jobs}) => {
+const JobList = () => {
   return (
     <section className="job-list">
-      {
-        jobs.map((job)=>(
-          <JobItem key={job.id} job={job} />
-        ))
-      }
+      <JobItem/>
     </section>
   )
 }
 
-JobList.propTypes = {
-  jobs: PropTypes.array.isRequired
-}
+
 
 export default JobList;
